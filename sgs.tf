@@ -1,5 +1,5 @@
-resource "aws_security_group" "default" {
-  name        = "terraform-ecs-bulbapp"
+resource "aws_security_group" "default_loadbalancer" {
+  name        = "terraform-ecs-bulbapp-loadbalancer"
   description = "Allow traffic"
   vpc_id      = "vpc-ffb59c85"
     ingress {
