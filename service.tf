@@ -7,6 +7,6 @@ resource "aws_ecs_service" "default" {
         load_balancer {
     		target_group_arn  = "${aws_lb_target_group.default.arn}"
     		container_port    = 80
-    		container_name    = "ecs-bulbapp"
+    		container_name    = "bulbapp"
 	}
 }
