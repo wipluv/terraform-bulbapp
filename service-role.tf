@@ -8,7 +8,8 @@ resource "aws_iam_role_policy_attachment" "ecs-service-role-attachment" {
 }
 data "aws_iam_policy_document" "ecs-service-policy" {
     statement {
-        actions = ["sts:AssumeRole"]        principals {
+        actions = ["sts:AssumeRole"]        
+        principals {
             type        = "Service"
             identifiers = ["ecs.amazonaws.com"]
         }
