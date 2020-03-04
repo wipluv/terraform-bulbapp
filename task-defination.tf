@@ -18,6 +18,5 @@ resource "aws_ecs_task_definition" "default" {
     "memory": 512,
     "cpu": 1024
   },
-]
 DEFINITION
 }
