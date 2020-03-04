@@ -19,5 +19,5 @@ resource "aws_iam_role_policy_attachment" "default" {
 
 resource "aws_iam_instance_profile" "default" {
     name = "terraform-ecs-bulbapp"
-    roles = ["${aws_iam_role.default.id}"]
+    role = ["${aws_iam_role.default.id}"]
 }
