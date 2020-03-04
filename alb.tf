@@ -3,7 +3,7 @@ resource "aws_lb" "default" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = ["${aws_security_group.default_lb.id}"]
-  subnets            = ["subnet-fb8428b6", "subnet-bd223be1"] 
+  subnets            = ["subnet-bd223be1", "subnet-987c67b6"] 
   enable_deletion_protection = false
   tags = {
     Environment = "dev"
