@@ -2,7 +2,7 @@ resource "aws_lb" "default" {
   name               = "terraform-ecs-bulbapp"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = ["${aws_security_group.default_lb.id}"]
+  security_groups    = ["${aws_security_group.default_loadbalancer.id}"]
   subnets            = ["subnet-987c67b6", "subnet-bd223be1"] 
   enable_deletion_protection = false
   tags = {
