@@ -1,6 +1,8 @@
+/*
 data "aws_ecs_task_definition" "default" {
   task_definition = "${aws_ecs_task_definition.default.family}"
 }
+*/
 resource "aws_ecs_task_definition" "default" {
     family                = "bulbapp"
     container_definitions = <<DEFINITION
@@ -17,6 +19,7 @@ resource "aws_ecs_task_definition" "default" {
     ],
     "memory": 512,
     "cpu": 1024
-  },
+  }
+]
 DEFINITION
 }
