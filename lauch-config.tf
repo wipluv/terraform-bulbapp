@@ -1,7 +1,7 @@
 resource "aws_launch_configuration" "default" {
     name                        = "terraform-ecs-bulbapp"
     image_id                    = "ami-098616968d61e549e"
-    instance_type               = "t2.micro"
+    instance_type               = "t2.large"
     iam_instance_profile        = "${aws_iam_instance_profile.default.id}"
     root_block_device {
       volume_type = "standard"
